@@ -14,15 +14,13 @@ output:
 
 ```{r setup, include=FALSE}
 library(flexdashboard)
-<<<<<<< HEAD
 library(tidyverse) #includes ggplot2
 library(tigris)
 library(janitor)
 library(writexl)
 library(scales)
 library(lubridate)
-=======
->>>>>>> 841a0e51044ae09841d6c477a3ec56ffd6af526c
+
 ```
 
 Column {data-width=650}
@@ -37,8 +35,6 @@ Column {data-width=650}
     geom_col(fill = "blue")
 
 
-=======
->>>>>>> 841a0e51044ae09841d6c477a3ec56ffd6af526c
 ```
 
 Column {data-width=350}
@@ -47,6 +43,10 @@ Column {data-width=350}
 ### Chart B
 
 ```{r}
+
+ ggplot(complaints, aes(x = timely_response, y = "")) +
+    geom_col(fill = "red")
+
 
 ```
 
