@@ -1,7 +1,12 @@
 ---
+<<<<<<< HEAD
 title: "Mini Project Consumer Complaints 2"
 author: "Bridget Perry"
 output:
+=======
+title: "Untitled"
+output: 
+>>>>>>> 841a0e51044ae09841d6c477a3ec56ffd6af526c
   flexdashboard::flex_dashboard:
     orientation: columns
     vertical_layout: fill
@@ -9,12 +14,15 @@ output:
 
 ```{r setup, include=FALSE}
 library(flexdashboard)
+<<<<<<< HEAD
 library(tidyverse) #includes ggplot2
 library(tigris)
 library(janitor)
 library(writexl)
 library(scales)
 library(lubridate)
+=======
+>>>>>>> 841a0e51044ae09841d6c477a3ec56ffd6af526c
 ```
 
 Column {data-width=650}
@@ -24,10 +32,13 @@ Column {data-width=650}
 
 ```{r}
 
+<<<<<<< HEAD
  ggplot(complaints, aes(x = submitted_via, y = "")) +
     geom_col(fill = "blue")
 
 
+=======
+>>>>>>> 841a0e51044ae09841d6c477a3ec56ffd6af526c
 ```
 
 Column {data-width=350}
