@@ -54,5 +54,8 @@ Column {data-width=350}
 
 ```{r}
 
+ ggplot(complaints, aes(x = consumer_consent_provided, y = "")) +
+    geom_col(fill = "black")
+
 ```
 
