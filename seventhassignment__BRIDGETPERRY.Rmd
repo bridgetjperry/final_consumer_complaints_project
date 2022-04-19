@@ -1,6 +1,7 @@
 ---
-title: "Untitled"
-output: 
+title: "Mini Project Consumer Complaints 2"
+author: "Bridget Perry"
+output:
   flexdashboard::flex_dashboard:
     orientation: columns
     vertical_layout: fill
@@ -8,6 +9,12 @@ output:
 
 ```{r setup, include=FALSE}
 library(flexdashboard)
+library(tidyverse) #includes ggplot2
+library(tigris)
+library(janitor)
+library(writexl)
+library(scales)
+library(lubridate)
 ```
 
 Column {data-width=650}
@@ -16,6 +23,10 @@ Column {data-width=650}
 ### Chart A
 
 ```{r}
+
+ ggplot(complaints, aes(x = submitted_via, y = "")) +
+    geom_col(fill = "blue")
+
 
 ```
 
