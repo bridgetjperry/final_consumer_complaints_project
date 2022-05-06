@@ -15,6 +15,9 @@ library(scales)
 library(lubridate)
 library(ggplot2)
 library(formattable)
+library(gt)
+library(DT)
+library(tibble)
 
 ```
 
@@ -31,6 +34,7 @@ table(complaints$submitted_via, complaints$timely_response)
 Table 2: Company Response to Customer and Response Time Table
 
 ```{r}
+
 table(complaints$company_response_to_consumer, complaints$timely_response)
 
 
